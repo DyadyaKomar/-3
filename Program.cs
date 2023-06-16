@@ -1,31 +1,30 @@
-﻿// void CheckEven (int num1, int num2)
-// {
-//     if(num1 % 2 == 0)
-//     {
-//         System.Console.WriteLine($"число {num2} кратно {num1}");
-//     }
-//     else
-//     {
-//         System.Console.WriteLine($"число {num2} не кратно {num1} остаток от деления -> {num1 % num2}");
-//     }
-// }
+﻿//  HomeWork10: Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
+//  456 -> 5
+//  782 -> 8
+//  918 -> 1
 
-// System.Console.WriteLine("Введите первое число ->");
-// int num1 = Convert.ToInt32(Console.ReadLine());
-// System.Console.WriteLine("Введите второе число ->");
-// int num2 = Convert.ToInt32(Console.ReadLine());
+// Console.Clear();
+// Console.WriteLine("HomeWork10 ");
+// Console.Write("Введи трёхзначное число: ");
+// int threeDigitNumber = Convert.ToInt32(Console.ReadLine());
+// string stringNumber = Convert.ToString(threeDigitNumber);
+// Console.WriteLine("вторая цифра этого числа -> "+stringNumber[1]);
 
-// CheckEven (num1, num2)
 
-bool CheckEven (int num)
+// HomeWork13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
+// 645 -> 5
+// 78 -> третьей цифры нет
+// 32679 -> 6
+
+Console.Clear();
+Console.WriteLine("HomeWork13");
+Console.Write("Введите число ");
+int anyNumber = Convert.ToInt32(Console.ReadLine());
+string anyNumberText = Convert.ToString(anyNumber);
+if (anyNumberText.Length > 2)
 {
-    if (num % 7 == 0 && num % 23 == 0) 
-    return true;
-else
-    return false;
-
-
+  Console.WriteLine("третья цифра -> " + anyNumberText[2]);
 }
-System.Console.Write("Введите число ->");
-int num = Convert.ToInt32(Console.ReadLine());
-System.Console.WriteLine(CheckEven(num1, num2));
+else {
+  Console.WriteLine("-> третьей цифры нет");
+}
