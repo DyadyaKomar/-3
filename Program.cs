@@ -28,3 +28,4 @@
 // else {
 //   Console.WriteLine("-> третьей цифры нет");
 // }
+//github.com/DyadyaKomar/HomeWork-2.git
